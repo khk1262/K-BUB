@@ -1,0 +1,12 @@
+yolo.zip : 신호등, 표지판 인식(욜로)
+ - darknet.py : yolo구현을 위한 darknet파일
+ - libdarknet.so : darknet 라이브러리
+ - plate2.data : yolo 데이터 파일(train, valid, names 등 경로)
+ - test.py : 학습된 가중치 파일을 이용하여 원하는 값 추출하기 위한 파일(미완성, 웹캠or동영상까지는 작동 되는데 객체를 검출하면 꺼짐)
+ - train.names : 클래스 이름 파일
+ - yolov4-custom2.cfg : yolo모델 설정파일(config)
+ - yolov4-coustom2_final.weights : 가중치파일(24200iteration, 416x416)
+
+
+lane_detect.py : 기존에 제작한 opencv를 이용한 차선 검출 소스
+lane_detect2.py : 새로 만들고 있는 opencv를 이용한 차선 검출 소스(미완성, bird eyes view 추가)
