@@ -1,6 +1,6 @@
 # K-BUB
-autonomous car contest preparing \n
-koreatech
+#### autonomous car contest preparing
+#### koreatech
 
 ## 1. 현재 각 분야 진행 상황
 
