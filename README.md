@@ -9,6 +9,7 @@
 
 * 비전
 > 현재 yolo를 이용한 표지판 인식, 신호등 인식 등을 대략 완성시켰고 차선 인식 및 ROS 적용을 진행 중
+<img src="/Vision/vision/image/recognition.jpg" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="recognition"></img><br/>
 
 
 
