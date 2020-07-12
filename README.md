@@ -2,7 +2,7 @@
 #### autonomous car contest preparing
 #### koreatech
 
-1. 현재 각 분야 진행 상황
+## 1. 현재 각 분야 진행 상황
 
 * 라이다
 > 유클리디안 클러스터링을 이용하여 장애물을 분류, 해당 장애물로부터 centoid 검출하여 라이다와의 거리와 각도 출력
