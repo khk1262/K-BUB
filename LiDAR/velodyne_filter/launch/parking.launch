@@ -1,0 +1,41 @@
+<launch>
+
+    <param name="use_sim_time" value="false"/>
+    
+
+    <node pkg="rosbag" type="play" name="rosbag_play" required="true" args="-l /home/khk1262/catkin_ws/src/velodyne_filter/resources/parking_t1.bag"/>
+
+    <node pkg="tf" type="static_transform_publisher" name="map_to_velodyne" output="screen" args="0.3 0 1 0 0 0 map velodyne 20"/>
+
+    <node pkg="velodyne_filter" type="velodyne_cluster" name="velodyne_cluster_node" output="screen">
+        <param name="x_axis_min" value="-0.0"/>
+        <param name="x_axis_max" value="8.0"/>
+        <param name="y_axis_min" value="-5.0"/>
+        <param name="y_axis_max" value="0.0"/>
+        <param name="z_axis_min" value="-1.0"/>
+        <param name="z_axis_max" value="5.0"/>
+
+        <param name="z_axis_angle_" value="0.0"/>
+    </node>
+
+    <node pkg="velodyne_filter" type="velodyne_parking" name="velodyne_parking_node" >
+        <param name="P_first_x" value="1.25"/>
+        <param name="P_first_y" value="-1.0"/>
+
+        <param name="P_second_x" value="1.25"/>
+        <param name="P_second_y" value="-5.0"/>
+
+        <param name="P_third_x" value="4.25"/>
+        <param name="P_third_y" value="-5.0"/>
+
+        <param name="P_fourth_x" value="4.25"/>
+        <param name="P_fourth_y" value="-1.0"/>        
+
+    </node>
+
+    <node pkg="velodyne_filter" type="velodyne_parking_visual" name="velodyne_parking_visual_node"/>
+
+
+    <node pkg="rviz" type="rviz" name="rviz" output="screen" args="-d $(find velodyne_filter)/resources/cluster.rviz"/>
+
+</launch>

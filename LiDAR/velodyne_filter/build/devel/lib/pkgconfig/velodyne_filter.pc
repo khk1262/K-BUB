@@ -1,0 +1,8 @@
+prefix=/home/khk1262/catkin_ws/src/velodyne_filter/build/devel
+
+Name: velodyne_filter
+Description: Description of velodyne_filter
+Version: 0.0.0
+Cflags: -I/home/khk1262/catkin_ws/src/velodyne_filter/build/devel/include
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy std_msgs geometry_msgs sensor_msgs message_runtime

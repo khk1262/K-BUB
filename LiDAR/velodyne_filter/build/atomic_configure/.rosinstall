@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/khk1262/catkin_ws/src/velodyne_filter/build/devel/setup.sh
