@@ -8,7 +8,7 @@
 > 유클리디안 클러스터링을 이용하여 장애물을 분류, 해당 장애물로부터 centoid 검출하여 라이다와의 거리와 각도 출력
 
 * 비전
-> YOLO v4를 이용한 표지판, 신호등 인식 학습(mAP 96.88%)  
+> [YOLO v4](https://github.com/AlexeyAB/darknet)를 이용한 표지판, 신호등 인식 학습(mAP 96.88%)  
 > Open CV 를 이용하여 이미지를 전처리 한 후, 슬라이딩 윈도우를 이용하여 차선인식 진행중  
 
 > [2020/08/01 가중치 파일 다운로드](https://koreatechackr-my.sharepoint.com/:u:/g/personal/jun752601_koreatech_ac_kr/EUX4ebVUXcdDituoYFIJ0_QBPDAALaskfOO81BMw7soqHw?e=yqGHH4)  
