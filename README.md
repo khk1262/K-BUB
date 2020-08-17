@@ -14,6 +14,9 @@
 > [2020/08/01 가중치 파일 다운로드](https://koreatechackr-my.sharepoint.com/:u:/g/personal/jun752601_koreatech_ac_kr/EUX4ebVUXcdDituoYFIJ0_QBPDAALaskfOO81BMw7soqHw?e=yqGHH4)  
 > [2020/08/01 이미지 파일 다운로드(용량 매우큼 14.9GB)](https://koreatechackr-my.sharepoint.com/:u:/g/personal/jun752601_koreatech_ac_kr/EY2g1l3JskpPjfq7mptidfEBGpwcxWpImXruilVjKeyHNQ?e=b6OPT3)
 
+* 플래닝
+> [2020/08/17](https://koreatechackr-my.sharepoint.com/:u:/g/personal/jun752601_koreatech_ac_kr/EY_P6HrQh45JoHGBB67nYUUBLCQaM419OGnzAJ9BuYF2Gg?e=5gqXwY)
+
 ##### 표지판 인식 모습
 
 <img src="/Vision/vision/image/recognition.jpg" width="900px" height="450px" title="vision" alt="recognition"></img><br/>
