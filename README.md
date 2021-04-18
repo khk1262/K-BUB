@@ -9,6 +9,11 @@
 > 
 > ccw 알고리즘 이용하여 주차공간 내에 point가 검출이 되면 주차 불가, 검출 되지 않을시 주차 가능하도록 bool값 출력 및 시각화
 
+##### 클러스터링 모습
+
+<img src="/LiDAR/img/클러스터링.jpg" width="900px" height="450px" title="ccw" alt="recognition"></img><br/>
+
+
 ##### ccw 알고리즘 
 
 <img src="/LiDAR/img/ccw.png" width="900px" height="450px" title="ccw" alt="recognition"></img><br/>
