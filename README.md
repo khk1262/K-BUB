@@ -9,6 +9,12 @@
 > 
 > ccw 알고리즘 이용하여 주차공간 내에 point가 검출이 되면 주차 불가, 검출 되지 않을시 주차 가능하도록 bool값 출력 및 시각화
 
+##### ccw 알고리즘 
+
+<img src="/LiDAR/img/ccw.png" width="900px" height="450px" title="ccw" alt="recognition"></img><br/>
+
+
+
 * 비전
 > [YOLO v4](https://github.com/AlexeyAB/darknet)를 이용한 표지판, 신호등 인식 학습(mAP 96.88%)  
 > Open CV 를 이용하여 이미지를 전처리 한 후, 슬라이딩 윈도우를 이용하여 차선인식 진행중  
