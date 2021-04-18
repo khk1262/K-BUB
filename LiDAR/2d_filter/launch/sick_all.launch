@@ -1,0 +1,17 @@
+<launch>
+
+  <param name="use_sim_time" value="false"/>
+  
+  
+  <!-- <include file="$(find sick_scan)/launch/sick_lms_1xx.launch"/> -->
+  
+  <!-- <node pkg="rosbag" type="play" name="rosbag_play" required="true"
+           args="-l /home/khk1262/catkin_ws/src/sick_filter/resources/2020-07-31-15-43-51.bag"/> -->
+  
+  <node pkg="sick_filter" type="sick_narrow" name="sick_narrow_node"/>
+  
+  <include file="$(find sick_filter)/launch/sick_filter.launch"/>
+  
+  <!-- <include file="$(find velodyne_filter)/launch/cluster.launch" /> -->
+ 
+</launch>

@@ -1,0 +1,32 @@
+<launch>
+
+  <param name="use_sim_time" value="false"/>
+
+<!-- <include file="$(find sick_scan)/launch/sick_lms_1xx.launch"/> -->
+
+  <node pkg="tf" type="static_transform_publisher" name="laser" args="0.5 0 0 0 0 0 map laser 30" />
+
+  <node pkg="sick_filter" type="sick_vehicle_roi" name="sick_vehicle_roi_node"/>
+  <!-- <node pkg="sick_filter" type="roi_angle" name="roi_angle_node"/> -->
+
+  <node pkg="sick_filter" type="sick_cluster" name="sick_cluster_node">
+    <param name="x_axis_min" value="-0.0"/>
+    <param name="x_axis_max" value="8.0"/>
+    <param name="y_axis_min" value="-2.0"/>
+    <param name="y_axis_max" value="2.0"/>
+
+    <param name="cluster_meter" value="0.3"/>
+    <param name="cluster_size_min" value="3"/>
+    <param name="cluster_size_max" value="20000"/>    
+  </node>
+
+  <node pkg="sick_filter" type="sick_narrow" name="sick_narrow_node" output="screen"/>
+
+
+  <node pkg="rosbag" type="play" name="rosbag_play" required="true"
+          args="-l /home/khk1262/catkin_ws/src/sick_filter/resources/narrow_path.bag"/>
+
+
+  <node pkg="rviz" type="rviz" name="rviz" output="screen" args="-d $(find sick_filter)/resources/sick_cluster.rviz"/>
+
+</launch>
