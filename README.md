@@ -11,12 +11,12 @@
 
 ##### 클러스터링 모습
 
-<img src="/LiDAR/img/클러스터링.jpg" width="900px" height="450px" title="ccw" alt="recognition"></img><br/>
+<img src="/LiDAR/img/클러스터링.jpg" width="600px" height="300px" title="ccw" alt="recognition"></img><br/>
 
 
 ##### ccw 알고리즘 
 
-<img src="/LiDAR/img/ccw.png" width="900px" height="450px" title="ccw" alt="recognition"></img><br/>
+<img src="/LiDAR/img/ccw.png" width="600px" height="300px" title="ccw" alt="recognition"></img><br/>
 
 
 
